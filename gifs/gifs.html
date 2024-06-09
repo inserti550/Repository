@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<body>
+<div id="gifContainer"></div>
+
+<script>
+var gifs = ["image1.gif", "image2.gif", "image3.gif", ...];
+
+var container = document.getElementById('gifContainer');
+
+for (var i = 0; i < gifs.length; i++) {
+    var img = document.createElement('img');
+    img.src = gifs[i];
+    container.appendChild(img);
+}
+</script>
+
+</body>
+</html>
